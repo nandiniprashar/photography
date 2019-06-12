@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="mycss/mycss.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+
+
+    <title>Click</title>
+  </head>
+<body>
+<!------------------------------------------------------------------------------------------------------>
+
+<!--home section-->
+<section id="home">
+  <div class="container">
+    <div class="col-sm-13">
+      <div class="col-sm-13">
+          <img src="images/1.jfif" height="60px" style="opacity:0.1">
+              <!--navigation bar-->
+              <div class="top">
+                <div>
+                  <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#address">ADDRESS</a></li>
+                 </ul>
+                </div>
+              </div>
+          <!--main text on image-->
+          <div class="centered">
+                <div class="maintext">
+                  PHOTOGRAPHY<br><br><br>
+                </div>
+                  <div CLASS="maintext1">
+                    CAPTURE THE HUMANITY OF THE MOMENT
+                    <span class="glyphicon glyphicon-camera"></span>
+                  </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------------------------------------------------------------------------------------------------------->
+
+
+<!--about section-->
+<div class="container">
+   <section id="about" style="margin-top:1px;background-color: #111;">
+      <div class="row">
+         <div class="three columns">
+            <img class="profile-pic"  src="images/download.png" />
+         </div>
+         <div class="nine columns main-col">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div> 
+      </div>
+   </section> 
+ </div>
+   <!-- About Section End-->
+<!---------------------------------------------------------------------------------------------------------->
+
+
+<div class="container">
+   <section id="works" style="background-color: #111;">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed" style="text-align: center;font-size:150%">
+          <div>CHECK OUT SOME OF MY WORKS</div><br>
+          <br>
+          <div class="row"> 
+  <div class="column">
+    <img src="images/2.jfif">
+    <img src="images/3.jfif">
+    
+  </div>
+ <div class="column">
+    <img src="images/4.jpg">
+    <img src="images/5.jpg">
+    
+  </div> 
+  <div class="column">
+    <img src="images/10.jfif">
+    <img src="images/9.jpg">
+   
+  </div>
+  <div class="column">
+    <img src="images/13.jfif">
+    <img src="images/11.jpg">
+   
+  </div>
+  
+  <br>
+
+</div>
+         </div>
+       </div>
+     </section>
+   </div>
+   <br>
+   <br>
+   <!--work section ended-->
+<!------------------------------------------------------------------------------------------------------------>
+
+
+   <!--contact-->
+   <section id="contact">
+   <div class= "container">
+   <div class="col-xs-12">
+     <div class="twelve columns collapsed" style="text-align:center;font-size:170%;margin-left:500px;margin-top:-55px"><br><br>
+      Contact <span class="glyphicon glyphicon-envelope"></span></div><br><br>
+
+   </div>
+ 
+
+
+    <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               
+<form name="myform"  method="post" action="#"> 
+          <fieldset>
+
+                  <div>
+               <label>Name*</label>
+               <input type="text" placeholder ="name" size="35"  id="name" onclick="validateform()">
+                  </div>
+
+                  <div>
+               <label> Email* </label>
+               <input type="text" placeholder ="name@example.com" size="35"  id="email" onclick="validateform()">
+                  </div>
+
+                  
+
+                  <div>
+                     <label>Feedback </label>
+                     <textarea cols="50" rows="5"  id="feedbackMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit">Submit</button>
+                  </div>
+
+          </fieldset>
+           </form> <!-- Form End -->
+
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function validateform()
+{
+  var name=document.myform.name.value;
+  var x=document.myform.email.value;
+  var atposition=x.IndexOf("@");
+  var dotposition=x.IndexOf(".");
+  if(name==null||name=="")
+  {
+    alert="Please fill your name";
+    return false;
+  }
+  else
+  {
+  console.log("welcome"+name);  
+  }
+  if(atposition<1||dotposition<atposition+2||dotposition+2>x.length)
+  {
+    alert("please enter a valid email address");
+    return false;
+    
+  }
+
+}
+</script>
+<!------------------------------------------------------------------------------------------------------------------>
+
+
+<section id="address">
+<div class="col-xs-12" style="text-align: center">
+               <div class="twelve columns collapsed" style="text-align:center;font-size:170%;margin-left:650px"><br><br>
+      Address and Phone <span class="glyphicon glyphicon-phone"></span></div><br><br>
+      <div><p class="address" style="text-align: center;color:white" >
+        <br><br>
+        Photography and fine arts club<br>
+        Guru Nanak Dev Engineering College<br>
+        Ludhiana<br>
+        <br>
+        Email-id:prasharnandini2512@gmail.com<br>
+        +91-9988776655
+      </p>
+      </div>
+            </div>
+
+<!------------------------------------------------------------------------------------------------------------------->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+  </body>
+
+  </html>
