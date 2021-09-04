@@ -6,7 +6,7 @@ function validateform()
 	var dotposition=x.IndexOf(".");
 	if(name==null||name=="")
 	{
-		alert="Please fill your name";
+		alert="Please fill your name here!";
 		return false;
 	}
 	else
@@ -15,7 +15,7 @@ function validateform()
 	}
 	if(atposition<1||dotposition<atposition+2||dotposition+2>x.length)
 	{
-		alert("please enter a valid email address");
+		alert("Please enter a valid email address!");
 		return false;
 		
 	}
